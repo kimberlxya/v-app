@@ -1,0 +1,73 @@
+/* Reset default spacing */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Main container with full-screen background */
+.valentine-container {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* YES button */
+.yesButton {
+  border: 3px solid green;
+  background-color: white;
+  color: green;
+  padding: 12px 24px;
+  margin-right: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* NO button */
+.noButton {
+  border: 3px solid red;
+  background-color: white;
+  color: red;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effects */
+.yesButton:hover {
+  box-shadow: 0 0 12px green;
+}
+
+.noButton:hover {
+  box-shadow: 0 0 12px red;
+}
+
+/* Big bold text for the question */
+.valentine-container > div:first-of-type {
+  font-size: 2.5rem;   /* makes it big */
+  font-weight: bold;    /* makes it thick */
+  color: white;         /* optional, makes it pop on the background */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* optional shadow for readability */
+  margin-bottom: 20px;  /* space below question */
+}
+
+/* Big bold text for "Yay!!!!" */
+.valentine-container .text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-top: 20px;
+}
